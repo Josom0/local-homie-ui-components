@@ -22,7 +22,7 @@ const CarouselTest = () => {
       <div>
         <AssetButton altImage="GoBack" srcImage="https://cdn.iconscout.com/icon/free/png-256/back-arrow-1767523-1502427.png" onClick={handleButtonClick} style={{ width: "50px"}} />
 
-        <Carousel index={index} onActiveIndexChange={handleActiveIndexChange} showDotsInLastITem={false} activeIndex={index}>
+        <Carousel index={index} onActiveIndexChange={handleActiveIndexChange} showDotsInLastITem={false} callbackBack={() => {}} callbackNext={() => {}} callbackSkip={() => {}}>
           <CarouselItem
             description='Llena el pre-check y sube tus documentos'
             srcImg="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjqstVoeVSIp6ZR6xY6C8eFMBK6TAy-pyg_g&usqp=CAU"
@@ -48,7 +48,7 @@ const CarouselTest = () => {
             stepNumber='Checkout'
           />
         </Carousel>
-        
+
       </div>
     </div>
   )
